@@ -1,0 +1,26 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+
+div.temp_post_image_div{
+  height: 200px;
+  width: 200px;
+  border: 2px soild black;
+
+}
+div.base64_trigger_div{
+  display: none;
+}
+
+div.w3-row{
+  text-align: center;
+  width: 98%;
+  margin: 1%;
+
+
+}
+div.w3-col{
+  width: 50%;
+  overflow: hidden;
+}

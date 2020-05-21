@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <title>Upload Media_File</title>
+  </head>
+  <script src="includes/jquery.min.js" charset="utf-8"></script>
+  <script src="js/Post_Create.js" charset="utf-8"></script>
+  <script src="js/Image_Processor.js" charset="utf-8"></script>
+  <script src="js/Image_Preview.js" charset="utf-8"></script>
+  <script src="js/Loader.js" charset="utf-8"></script>
+
+
+  <script src="js/Data.js" charset="utf-8"></script>
+  <script src="js/Communication.js" charset="utf-8"></script>
+
+
+  <link rel="stylesheet" href="css/w3pro.css">
+  <link rel="stylesheet" href="css/w3-theme-dark-grey.css">
+  <link rel="stylesheet" href="css/Loader.css">
+  <link rel="stylesheet" href="css/index.css">
+
+
+
+  <body class="w3-theme-d4 Main_Frame">
+    <div class="Main_Window">
+
+    <div class="custom_row w3-row custom_full">
+      <div class="custom_half w3-col">
+        <textarea placeholder="Title" class="w3-theme-l1 ui_element" id="Post_Title" rows="5" cols="60"></textarea>
+      </div>
+
+      <div class="custom_half w3-col">
+        <textarea placeholder="Description" class="w3-theme-l1 ui_element" id="Post_Description" rows="5" cols="60"></textarea>
+      </div>
+    </div>
+
+    <div class="custom_row w3-row custom_full">
+      <div class="custom_half w3-col">
+        <textarea placeholder="Alternate Text" class="w3-theme-l1 ui_element" id="Post_Alter" rows="5" cols="60"></textarea>
+      </div>
+
+      <div class="custom_half w3-col">
+        <textarea placeholder="Caption Text" class="w3-theme-l1 ui_element" id="Post_Caption" rows="5" cols="60"></textarea>
+      </div>
+    </div>
+<hr>
+    <div class="w3-row" >
+      <div class="w3-col custom_half">
+        <p><b>Please select the Picture of the Post</b></p>
+        <input id="Post_Image" class="ui_element" type="file" name="" value="0" files="">
+      </div>
+      <div class="w3-col custom_half">
+        <div class=" w3-theme-l4 temp_post_image_div"></div>
+      </div>
+    </div>
+    <button class="ui_element" type="button" name="button" onclick="PC.confirm_post()" id="confirm_post_button">confirm</button>
+
+    <div class="base64_trigger_div"></div>
+    <div class="Communication_Data_Div"></div>
+
+
+    </div>
+  </body>
+
+<script type="text/javascript">
+$(document).ready( function () {
+
+  LO = new Loader();
+  LO.init_loader();
+
+  CO = new Communication();
+  CO.init_communication();
+
+  IPRE = new Image_Preview();
+  IPRE.init_image_preview();
+
+  PC = new Post_Create();
+  PC.init_post_creator();
+
+  //USER = new User();
+  //USER.init_user();
+
+})
+  function activate_loader() {
+    console.log("ac");
+    $('div.Loader_Trigger_Div').trigger('App_Loading');
+  }
+  function deactivate_loader() {
+    console.log("ac");
+    $('div.Loader_Trigger_Div').trigger('App_Ready');
+  }
+</script>
+</html>

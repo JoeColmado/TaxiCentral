@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <title>Central</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="includes/font_awesome/fontawesome.css">
+  <script src="includes/font_awesome/fontawesome.min.js" charset="utf-8"></script>
+  <script src="includes/font_awesome/solid.min.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <!--    <link rel="stylesheet" href="css/style.css">-->
+  <link rel="stylesheet" href="simplesidebar/simplesidebar.css">
+
+
+
+
+  <script src="includes/jquery-3.4.1.min.js"></script>
+
+ <script type="text/javascript" src="cordova.js"></script>
+ <script type="text/javascript" src="js/index.js"></script>
+ <script type="text/javascript" src="js/custom.js"></script>
+
+
+ <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+ <!-- <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
+ <script type="text/javascript" src="leaflet/leaflet.js"></script> -->
+ <link rel="stylesheet" href="leaflet/leaflet.css" />
+ <script src="leaflet/leaflet.js"></script>
+ <script src="leaflet/leaflet.polylineDecorator.js"></script>
+
+
+ <script src="includes/popper.min.js" ></script>
+ <script src="includes/bootstrap.min.js" ></script>
+
+
+ <script src="simplesidebar/simplesidebar.js"></script>
+
+
+
+ <script src="js/Main_Menu.js" charset="utf-8"></script>
+ <script src="js/Login_User.js" charset="utf-8"></script>
+ <script src="js/GUI.js" charset="utf-8"></script>
+ <script src="js/User.js" charset="utf-8"></script>
+ <script src="js/Main_App.js" charset="utf-8"></script>
+ <script src="js/Settings.js" charset="utf-8"></script>
+<!-- <script src="js/Background_Online.js" charset="utf-8"></script> -->
+ <script src="js/Background_Location.js" charset="utf-8"></script>
+ <script src="js/Drivers.js" charset="utf-8"></script>
+ <script src="js/Online_Check.js" charset="utf-8"></script>
+ <script src="js/Permissions.js" charset="utf-8"></script>
+
+
+
+ <script src="js/Grid_View.js" charset="utf-8"></script>
+
+
+
+  <script src="js/Geo_Map.js" charset="utf-8"></script>
+  <script src="js/Post_Create.js" charset="utf-8"></script>
+  <script src="js/Image_Preview.js" charset="utf-8"></script>
+  <script src="js/Loader.js" charset="utf-8"></script>
+  <script src="js/Adaptive_Side_Bar.js" charset="utf-8"></script>
+
+  <script src="js/Admin.js" charset="utf-8"></script>
+  <script src="js/Online_Service.js" charset="utf-8"></script>
+  <script src="js/Globals.js" charset="utf-8"></script>
+
+
+
+  <script src="js/Setting_Loader.js" charset="utf-8"></script>
+  <script src="js/Init_App_Service.js" charset="utf-8"></script>
+  <script src="js/Pop_Up.js" charset="utf-8"></script>
+  <script src="js/Local_Image_Storage.js" charset="utf-8"></script>
+
+  <script src="js/Geo_Map_Control.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/Geo_Map_Control.css">
+
+
+
+
+
+
+
+
+  <script src="js/Data.js" charset="utf-8"></script>
+  <script src="js/Communication.js" charset="utf-8"></script>
+  <script src="js/Utilities.js" charset="utf-8"></script>
+
+
+
+  <link rel="stylesheet" href="css/w3pro.css">
+  <link rel="stylesheet" href="css/w3.css">
+
+  <link rel="stylesheet" href="includes/w3-theme-dark-grey.css">
+  <link rel="stylesheet" href="css/Loader.css">
+  <link rel="stylesheet" href="css/slider.css">
+
+  <link rel="stylesheet" href="css/index.css">
+
+
+
+</head>
+
+
+  <body class=" w3-theme-d5" >
+
+    <div id="my-sidebar-context" class="widget-sidebar-context   " >
+
+    <!-- Header Top Nav -->
+        <header id="this-header" class="navbar w3-theme-d4  page-header" >
+          <!-- Toggle Control For Side Bar-->
+          <span href="#" class="navbar-toggler widget-sidebar-toggler">
+            <i class=" fa-2x fas fa-outdent "></i>
+          </span>
+            <!-- <a class="navbar-brand" href="#" onclick="GUI.Sider_Nav_Map()">
+                Central
+            </a> -->
+            <i  onclick="GUI.Sider_Nav_Home()" class="w3-right w3-margin-left  w3-margin-right fa-2x fas fa-home"></i>
+            <i onclick="GUI.Sider_Nav_Drivers()" class=" w3-right w3-margin-left w3-margin-right  fa-2x fas fa-user-alt"></i>
+            <i onclick="GUI.Sider_Nav_Map()" class=" w3-right w3-margin-left w3-margin-right  fa-2x fas fa-map-marker"></i>
+            <!-- <i onclick="GUI.Sider_Nav_Settings()" class=" w3-right w3-margin-left w3-margin-right  fa-2x fas fa-tools"></i> -->
+
+          <!-- <div onclick="debug_com()" class="debug_div">debug </div> -->
+        </header>
+
+
+        <div class="page-body ">
+          <!-- Side_Nav -->
+            <nav class="widget-sidebar w3-center  w3-theme-d4" >
+                <ul class="list-unstyled mt-4">
+                    <li class="active w3-padding" onclick="GUI.Sider_Nav_Home()" >
+                        <a href="#">
+                          <i  class=" w3-margin-left w3-left fa-2x fas fa-home"></i><span >Perfil</span>
+                        </a>
+                    </li>
+                    <li class="w3-padding ">
+                        <a onclick="GUI.Sider_Nav_Drivers()"  href="#sidebar-link-mycomponents">
+                            <i class="w3-margin-left w3-left fa-2x fas fa-user-alt"></i><span>Personal</span>
+                        </a>
+                        <ul class="collapse list-unstyled hide"
+                            id="sidebar-link-mycomponents">
+                        </ul>
+                    </li>
+
+                    <li class="w3-padding" onclick="GUI.Sider_Nav_Map()">
+                        <a href="#">
+                            <i class="w3-margin-left w3-left fa-2x fas fa-map-marker"></i><span>Mapa</span>
+                        </a>
+                    </li>
+
+                    <li class="w3-padding" onclick="GUI.Sider_Nav_Settings()">
+                      <a href="#">
+                        <i class="w3-margin-left w3-left fa-2x fas fa-tools"></i><span>Adjustes</span>
+                      </a>
+                    </li>
+
+                    <li class="w3-padding" onclick="GUI.Sider_Nav_Admin()">
+                      <a href="#">
+                        <i class=" w3-margin-left w3-left fa-2x fas fa-bars"></i><span>Admin</span>
+                      </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <div id="Main_Page_Frame" class="page-main w3-theme-d5 " style= "min-height: 100%" >
+            </div>
+        </div>
+
+          <!-- Footer
+        <footer class="page-footer w3-theme-d4 text-white p-3">
+            <div>
+                <span id="Debug_Section">My Footer © 2019</span>
+                <button type="button" name="button" onclick="button_handler()">display positon</button>
+            </div>
+        </footer>
+          -->
+    </div>
+
+
+
+  </body>
+
+
+<script type="text/javascript">
+
+  $('div.debug_comm_trigger_div').on('central_online_success',function (e,data) {
+    console.log(data);
+  });
+
+
+function debug_com() {
+  $('div.Local_Image_Storage_Trigger_Div').trigger('show_image_list','main_page_div');
+
+  }
+
+</script>
+</html>

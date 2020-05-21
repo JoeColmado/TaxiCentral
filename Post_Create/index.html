@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <title>Upload Media_File</title>
+  </head>
+  <script src="includes/jquery.min.js" charset="utf-8"></script>
+  <script src="js/Post_Create.js" charset="utf-8"></script>
+  <script src="js/Image_Processor.js" charset="utf-8"></script>
+  <script src="js/Image_Preview.js" charset="utf-8"></script>
+  <script src="js/Loader.js" charset="utf-8"></script>
+
+
+  <script src="js/Data.js" charset="utf-8"></script>
+  <script src="js/Communication.js" charset="utf-8"></script>
+
+
+  <link rel="stylesheet" href="css/w3pro.css">
+  <link rel="stylesheet" href="css/w3-theme-dark-grey.css">
+  <link rel="stylesheet" href="css/Loader.css">
+  <link rel="stylesheet" href="css/index.css">
+
+
+
+  <body class="w3-theme-d4 Main_Frame">
+    <div class="Main_Window">
+      <button type="button" name="button" onclick="debug_user_geo_update()">Update User Position</button>
+
+    </div>
+  </body>
+
+<script type="text/javascript">
+
+  function debug_user_geo_update() {
+      $('div.Communication_Data_Div').trigger("update_user_geo_data",{lat: 1098.13, long: 78.32});
+  }
+$(document).ready( function () {
+
+  LO = new Loader();
+  LO.init_loader();
+
+  CO = new Communication();
+  CO.init_communication();
+
+  IPRE = new Image_Preview();
+  IPRE.init_image_preview();
+
+  PC = new Post_Create();
+  PC.init_post_creator();
+
+  //USER = new User();
+  //USER.init_user();
+
+})
+  function activate_loader() {
+    console.log("ac");
+    $('div.Loader_Trigger_Div').trigger('App_Loading');
+  }
+  function deactivate_loader() {
+    console.log("ac");
+    $('div.Loader_Trigger_Div').trigger('App_Ready');
+  }
+</script>
+</html>

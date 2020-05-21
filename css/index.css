@@ -1,0 +1,89 @@
+
+
+
+body{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#my-sidebar-context{
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  margin: 0px;
+
+}
+div.page-body{
+  overflow-y: scroll;
+  min-height: 100%;
+  width: 100%;
+  margin: 0px;
+
+
+}
+header.navbar{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 25;
+
+}
+nav.widget-sidebar{
+}
+#Main_Page_Frame{
+
+
+}
+
+#Change_User_Profile_Picture_File_Input{
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+#User_Change_Profile_Picture_Icon{
+
+}
+/*
+Leaflet Marker Icons
+*/
+.leaflet-marker-icon.selectedMarker_0{
+  background-color: green;
+  opacity: 1.0;
+
+  //your css
+}
+img.leaflet-marker-icon{
+  border: 5px solid teal;
+  background-color: black;
+  padding: 0px;
+}
+
+img.leaflet-marker-icon:active{
+  width: 100px;
+  z-index: 25;
+  border: 5px solid green;
+  opacity: 1.0;
+}
+div.leaflet-popup-content-wrapper{
+  background-color: gray;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+div.Driver_Popup_Div{
+  height: 100%;
+  width: 100%;
+}
+button{
+  font-weight: bold;
+  background-color: white;
+  font-size: 20px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <title>Upload Media_File</title>
+
+
+  </head>
+  <script src="includes/jquery.min.js" charset="utf-8"></script>
+  <script src="js/Post_Create.js" charset="utf-8"></script>
+  <script src="js/Image_Processor.js" charset="utf-8"></script>
+  <script src="js/Image_Preview.js" charset="utf-8"></script>
+  <script src="js/Loader.js" charset="utf-8"></script>
+
+  <script src="js/Base_64_Encode.js" charset="utf-8"></script>
+  <script src="js/User.js" charset="utf-8"></script>
+
+  <script src="js/Data.js" charset="utf-8"></script>
+  <script src="js/Communication.js" charset="utf-8"></script>
+
+
+
+  <link rel="stylesheet" href="css/w3pro.css">
+  <link rel="stylesheet" href="css/w3-theme-dark-grey.css">
+  <link rel="stylesheet" href="css/Loader.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script type="text/javascript">
+  $(document).ready( function () {
+
+    LO = new Loader();
+    LO.init_loader();
+
+    CO = new Communication();
+    CO.init_communication();
+
+    USER = new User();
+    USER.init_user();
+
+  })
+
+  </script>
+
+
+  <body class="w3-theme-d4 Main_Frame">
+    <div class="Main_Window">
+
+    <div class="custom_row w3-row custom_full">
+      <input type="text" name="name" value="" placeholder="User_Name" id="User_Name">
+      <input type="password" name="password" value="" placeholder="password" id="User_Pass">
+
+      <button onclick="USER.log_in()" type="button" name="button">login</button>
+
+    </div>
+
+    <div class="custom_row w3-row custom_full">
+
+    </div>
+
+
+  </body>
+
+
+</html>
