@@ -257,7 +257,7 @@ function Drivers() {
 
     $(wrap_div).append($('<span>',{
       id: 'Driver_Profile_Close_Button',
-      class: 'w3-display-topright',
+      class: 'w3-display-topright ',
       html: '<i class="fa-2x fas fa-times" style="color: white"></i>',
     }))
 
@@ -265,7 +265,9 @@ function Drivers() {
   //---Profile_ Picture
     $(wrap_div).append($('<div>',{
       id: profile_pic_div_id,
-      class: 'w3-display-container w3-card-4 w3-margin w3-round-xlarge'
+      class: 'w3-display-container w3-padding w3-card-4 w3-margin w3-padding w3-round-xlarge',
+      style: 'height: 180px; ',
+
     }))
 
 
@@ -273,16 +275,17 @@ function Drivers() {
       alt: user_name + 'no tiene foto',
       src: user_image_url,
       style: 'height: 150px; width: 150px; ',
-      class: 'w3-circle w3-margin',
+      class: 'w3-circle w3-display-middle  ',
       id: 'User_Home_Profile_Picture',
       button_index: index,
     }));
 
     $(profile_pic_div).append($('<h3>',{
       html: user_name.toUpperCase(),
+      class:"w3-display-topleft w3-xxlarge "
     }));
     $(profile_pic_div).append($('<button>',{
-      class: 'w3-theme-d2 w3-btn w3-round  ',
+      class: 'w3-teal w3-display-bottomright w3-btn w3-round  ',
       html: 'Ver en Mapa',
       id: 'user_profile_show_map_button',
       button_index: index,
