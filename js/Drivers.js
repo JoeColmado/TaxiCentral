@@ -92,7 +92,8 @@ function Drivers() {
 
     $('body').append($('<div>',{
       id: 'Driver_Wrap_Div_' + index ,
-      class: 'Driver_Wrap_Div w3-card-4 w3-margin w3-round-xlarge',
+      class: 'Driver_Show_Profile_Link Driver_Wrap_Div w3-card-4 w3-margin w3-round-xlarge w3-hover-theme',
+      button_index: index,
     }));
 
     $('#Driver_Wrap_Div_' + index ).append($('<img>',{
@@ -100,7 +101,6 @@ function Drivers() {
       src: image_data,
       alt: data_set.user_nicename,
       style: 'height: 100px; width: 100px;  margin: 5%',
-      button_index: index,
       class: 'Driver_Show_Profile_Link w3-circle',
 
     }));
