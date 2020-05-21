@@ -52,15 +52,14 @@ function Pop_Up() {
     $(GLOBAL_POPUP_FRAME).remove();
     $('body').append($('<div>',{
       id: GLOBAL_POPUP_FRAME_ID,
-      class: 'w3-theme-d5 w3-center w3-display-middle w3-border w3-round-xlarge w3-padding ',
+      class: 'w3-theme-d4 w3-padding w3-center  w3-diplay-container w3-display-middle  w3-round-xlarge w3-padding ',
       style: ' z-index: 2; min-width: 50%; height: 50%'
     }));
 
 
     $(GLOBAL_POPUP_FRAME).append($('<span>',{
-      class: 'Pop_Up_Close_Button ',
-      style: 'position: absolute; top: 1%; right: 1%;',
-      html: '<i class="fa-2x fas fa-times" style="color: red"></i>',
+      class: 'Pop_Up_Close_Button w3-btn w3-round-large w3-display-topright',
+      html: '<i class="fa-1x fas fa-times" style="color: red"></i>',
     }));
 
     temp_content = $(GLOBAL_POPUP_FRAME).clone().wrap('<div>').parent().html();
