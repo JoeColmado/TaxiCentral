@@ -71,7 +71,7 @@ function Login_User() {
 
     $(wrap_div_id).append($('<p>',{
       html: 'Usuario: ',
-      class:" w3-large",
+      class:" w3-large w3-red",
     }));
 
     $(wrap_div_id).append($('<input>',{
